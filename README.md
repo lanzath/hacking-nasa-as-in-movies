@@ -5,3 +5,5 @@
 #### How to use
 
 Just run `dotnet run` or the `.exe` file in bin/ directory, have fun (:
+
+![image](https://user-images.githubusercontent.com/39680004/145696824-810cbb7e-f8c4-4c6f-be51-d8702799803b.png)
