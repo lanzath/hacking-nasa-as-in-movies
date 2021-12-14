@@ -19,7 +19,7 @@ void Start()
 void Menu()
 {
     Console.WriteLine("\nDo you really want to Hack NASA and steal data ? (Y/n)");
-    char answer = char.Parse(Console.ReadLine().ToLower());
+    char? answer = char.Parse(Console.ReadLine().ToLower());
 
     if (answer == 'n') System.Environment.Exit(0);
 
@@ -39,6 +39,6 @@ void LoadingBar()
         Console.SetCursorPosition(0, Console.CursorTop - 1);
         LoadingBar += "#";
         Console.WriteLine(LoadingBar);
-        Thread.Sleep(150);
+        Thread.Sleep(100);
     }
 }
