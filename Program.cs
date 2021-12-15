@@ -1,4 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using System;
+
 Start();
 
 void Start()
@@ -26,7 +28,7 @@ void Menu()
     Console.WriteLine("\nHacking Nasa, please wait\n");
     LoadingBar();
 
-    Console.WriteLine("NASA SUCCESSFULLY HACKED, YOU HAVE 1 HOUR TO RUNAWAY FROM YOUR COUNTRY");
+    Console.WriteLine("\nNASA SUCCESSFULLY HACKED, YOU HAVE 1 HOUR TO RUNAWAY FROM YOUR COUNTRY");
     Console.ReadLine();
 }
 
@@ -36,9 +38,11 @@ void LoadingBar()
     string LoadingBar = "#";
     for (int i = 0; i < 50; i++)
     {
+        Console.ForegroundColor = ConsoleColor.Green;
         Console.SetCursorPosition(0, Console.CursorTop - 1);
         LoadingBar += "#";
         Console.WriteLine(LoadingBar);
         Thread.Sleep(100);
     }
+    Console.ForegroundColor = ConsoleColor.White;
 }
